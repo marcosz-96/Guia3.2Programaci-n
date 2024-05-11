@@ -89,7 +89,7 @@ namespace Prácticas_Guía_3_parte_2
                     Console.WriteLine("Opción Inválida");
                     break;
             }*/
-            
+
 
             //Ejercicio 3 de la Guía 3.2: Conversiones de calificaciones a letras
 
@@ -149,6 +149,52 @@ namespace Prácticas_Guía_3_parte_2
 
             //Ejercicio 5 de la Guía 3.2: Estaciones del Año
 
+            /*Console.WriteLine("Escriba el número del mes del cual desea saber a estación del año pertenece");
+
+            int numMes = int.Parse(Console.ReadLine());
+
+            switch (numMes)
+            {
+                case 1:
+                    Console.WriteLine("Estación de Verano");
+                    break;
+                case 2:
+                    Console.WriteLine("Estación de Verano");
+                    break;
+                case 3:
+                    Console.WriteLine("Termina el Verano y empieza el Otoño");
+                    break;
+                case 4:
+                    Console.WriteLine("Estación de Otoño");
+                    break;
+                case 5:
+                    Console.WriteLine("Estación de Otoño");
+                    break;
+                case 6:
+                    Console.WriteLine("Termina el Otoño y empieza el Invierno");
+                    break;
+                case 7:
+                    Console.WriteLine("Estación de Invierno");
+                    break;
+                case 8:
+                    Console.WriteLine("Estación de Invierno");
+                    break;
+                case 9:
+                    Console.WriteLine("Termina el Invierno y empieza la Primavera");
+                    break;
+                case 10:
+                    Console.WriteLine("Estación de Primavera");
+                    break;
+                case 11:
+                    Console.WriteLine("Estación de Primavera");
+                    break;
+                case 12:
+                    Console.WriteLine("Termina la Primavera y empieza el Verano");
+                    break;
+                default:
+                    Console.WriteLine("Opción Inválida");
+                    break;
+            }*/
 
         }
     }
