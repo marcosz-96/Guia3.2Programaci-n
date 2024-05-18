@@ -14,7 +14,7 @@ namespace Prácticas_Guía_3_parte_2
 
             // Ejercicio 1 de la Guía 3.2: Hacer una calculadora básica
 
-            /*Console.WriteLine("Ingrese el Primer Número");
+            Console.WriteLine("Ingrese el Primer Número");
             double num1 = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("Ingrese el Segundo Número");
@@ -88,12 +88,12 @@ namespace Prácticas_Guía_3_parte_2
                 default:
                     Console.WriteLine("Opción Inválida");
                     break;
-            }*/
+            }
 
 
             //Ejercicio 3 de la Guía 3.2: Conversiones de calificaciones a letras
 
-            /*Console.WriteLine("Escriba su calificación del 1 al 10");
+            Console.WriteLine("Escriba su calificación del 1 al 10");
 
             int calificacion = int.Parse(Console.ReadLine());
 
@@ -120,13 +120,13 @@ namespace Prácticas_Guía_3_parte_2
             else
             {
                 Console.WriteLine("Opción inválida. Ingrese nota numérica");
-            }*/
-        
+            }
+
 
 
             //Ejercicio 4 de la Guía 3.2: Clasificación de Triángulos
 
-            /*Console.WriteLine("Para clasificar el tipo de triángulo");
+            Console.WriteLine("Para clasificar el tipo de triángulo");
             Console.WriteLine();
             Console.WriteLine("Ingrese el valor del Primer Lado");
             double valor1 = Convert.ToDouble(Console.ReadLine());
@@ -201,12 +201,12 @@ namespace Prácticas_Guía_3_parte_2
                 default:
                     Console.WriteLine("Opción Inválida");
                     break;
-            }*/
+            }
 
 
             //Ejercicio 6 de la Guía 3.2: Días es un mes
 
-            /*Console.Write("Escriba el número del mes del cual desea saber cuantos días tiene: ");
+            Console.Write("Escriba el número del mes del cual desea saber cuantos días tiene: ");
     
             int mes = int.Parse(Console.ReadLine());
             
@@ -251,12 +251,12 @@ namespace Prácticas_Guía_3_parte_2
                 default:
                     Console.WriteLine("Opción Inválida, número de mes no encontrado");
                     break;
-            }*/
+            }
 
 
             //Ejercicio 7 de la Guía 3.2: Conversiones de unidades de medida
 
-            /*Console.Write("Escriba el número en centímetros que desea convertir: ");
+            Console.Write("Escriba el número en centímetros que desea convertir: ");
             string input = Console.ReadLine();
             double centimetros = Convert.ToDouble(input);
 
@@ -276,13 +276,13 @@ namespace Prácticas_Guía_3_parte_2
                 default:
                     Console.WriteLine("Opción inválida. Solo puede escribir 'm' para metros o 'km' para kilómetros.");
                     break;
-            }*/
+            }
 
 
             //Ejercicio 8 de la Guía 3.2: Descuento según la cantidad de artículos comprados
-            //En el ejemplo se entiende que el precio base es de 1.000$
+            //En el ejemplo se entiende que el precio base es de 1000.0$
 
-            /*Console.Write("Escribe la cantidad de artículos que a comprado: "); 
+            Console.Write("Escribe la cantidad de artículos que a comprado: "); 
 
             int cantidad = Convert.ToInt32(Console.ReadLine());
 
@@ -323,13 +323,39 @@ namespace Prácticas_Guía_3_parte_2
 
             double precio = 1000.0;
             double precioConDescuento = precio - (precio * descuento);
-            Console.WriteLine($"El precio con descuento es : ${precioConDescuento:F2}");*/
+            Console.WriteLine($"El precio con descuento es : ${precioConDescuento:F2}");
 
 
-            //Ejercicio 9 de la Guía 3.2: Calificación de números Positivos, Negativos o Ceros
-            
+            //Ejercicio 9 de la Guía 3.2: Clasificación de números Positivos, Negativos o Ceros
+
+            Console.Write("Ingrese un número: ");
+            _ = Console.ReadLine();
+
+            if (float.TryParse(input, out float numero))
+            {
+                switch (numero)
+                {
+                    case 0:
+                        Console.WriteLine("El número ingresado es cero.");
+                        break;
+                    default:
+                        if (numero > 0)
+                        {
+                            Console.WriteLine("El número ingresado es positivo.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("El número ingresado es negativo.");
+                        }
+                        break;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Entrada inválida. Por favor, ingrese un número válido.");
+            }
 
 
-        } 
+        }
     }
 }
