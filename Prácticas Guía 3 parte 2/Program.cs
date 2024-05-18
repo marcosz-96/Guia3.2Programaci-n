@@ -14,7 +14,7 @@ namespace Prácticas_Guía_3_parte_2
 
             // Ejercicio 1 de la Guía 3.2: Hacer una calculadora básica
 
-            Console.WriteLine("Ingrese el Primer Número");
+            /*Console.WriteLine("Ingrese el Primer Número");
             double num1 = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("Ingrese el Segundo Número");
@@ -88,38 +88,45 @@ namespace Prácticas_Guía_3_parte_2
                 default:
                     Console.WriteLine("Opción Inválida");
                     break;
-            }
+            }*/
 
 
             //Ejercicio 3 de la Guía 3.2: Conversiones de calificaciones a letras
 
-            Console.WriteLine("Escriba su calificación");
+            /*Console.WriteLine("Escriba su calificación del 1 al 10");
 
             int calificacion = int.Parse(Console.ReadLine());
 
             if (calificacion == 10)
             {
                 Console.WriteLine("E"); //Excelente
-                return;
             }
-            if (calificacion >= 8)
+            else if (calificacion >= 8 && calificacion < 10)
             {
                 Console.WriteLine("S"); //Satisfactorio
-                return;
             }
-            if (calificacion >= 4)
+            else if (calificacion >= 4 && calificacion <= 7)
             {
                 Console.WriteLine("B"); //Bien
             }
-            if (calificacion <= 3)
+            else if (calificacion <= 3 && calificacion > 0)
             {
                 Console.WriteLine("M"); //Mal
             }
+            else if (calificacion > 10 || calificacion <= 0)
+            {
+                Console.WriteLine("Opción inválida. Ingrese del 1 al 10");
+            }
+            else
+            {
+                Console.WriteLine("Opción inválida. Ingrese nota numérica");
+            }*/
+        
 
 
             //Ejercicio 4 de la Guía 3.2: Clasificación de Triángulos
 
-            Console.WriteLine("Para clasificar el tipo de triángulo");
+            /*Console.WriteLine("Para clasificar el tipo de triángulo");
             Console.WriteLine();
             Console.WriteLine("Ingrese el valor del Primer Lado");
             double valor1 = Convert.ToDouble(Console.ReadLine());
@@ -194,12 +201,12 @@ namespace Prácticas_Guía_3_parte_2
                 default:
                     Console.WriteLine("Opción Inválida");
                     break;
-            }
+            }*/
 
 
             //Ejercicio 6 de la Guía 3.2: Días es un mes
 
-            Console.WriteLine("Escriba el número del mes del cual desea saber cuantos días tiene: ");
+            /*Console.Write("Escriba el número del mes del cual desea saber cuantos días tiene: ");
     
             int mes = int.Parse(Console.ReadLine());
             
@@ -244,12 +251,12 @@ namespace Prácticas_Guía_3_parte_2
                 default:
                     Console.WriteLine("Opción Inválida, número de mes no encontrado");
                     break;
-            }
+            }*/
 
 
             //Ejercicio 7 de la Guía 3.2: Conversiones de unidades de medida
 
-            Console.Write("Escriba el número en centímetros que desea convertir: ");
+            /*Console.Write("Escriba el número en centímetros que desea convertir: ");
             string input = Console.ReadLine();
             double centimetros = Convert.ToDouble(input);
 
@@ -269,13 +276,13 @@ namespace Prácticas_Guía_3_parte_2
                 default:
                     Console.WriteLine("Opción inválida. Solo puede escribir 'm' para metros o 'km' para kilómetros.");
                     break;
-            }
+            }*/
 
 
             //Ejercicio 8 de la Guía 3.2: Descuento según la cantidad de artículos comprados
             //En el ejemplo se entiende que el precio base es de 1.000$
 
-            Console.Write("Escribe la cantidad de artículos que a comprado: ");
+            /*Console.Write("Escribe la cantidad de artículos que a comprado: "); 
 
             int cantidad = Convert.ToInt32(Console.ReadLine());
 
@@ -287,27 +294,27 @@ namespace Prácticas_Guía_3_parte_2
             }
             else if (cantidad >= 10 && cantidad  < 20)
             {
-                descuento = 0.05;
+                descuento = 0.09;
             }
             else if (cantidad  >= 20 && cantidad  < 50)
             {
-                descuento = 0.10;
+                descuento = 0.18;
             }
             else
             {
-                descuento = 0.15;
+                descuento = 0.25;
             }
 
             switch (cantidad )
             {
                 case int n when n >= 50:
-                    Console.WriteLine("Tienes un descuento del 15%!");
+                    Console.WriteLine("El precio total es de $1000.0 pero tienes un descuento del 25%!");
                     break;
                 case int n when n >= 20:
-                    Console.WriteLine("Tines un descuento del 10%!");
+                    Console.WriteLine("El precio total es de $1000.0 pero tienes un descuento del 18%!");
                     break;
                 case int n when n >= 10:
-                    Console.WriteLine("Tienes un decuento del 5%!");
+                    Console.WriteLine("El precio total es de $1000.0 pero tienes un decuento del 9%!");
                     break;
                 default:
                     Console.WriteLine("No tienes descuentos.");
@@ -316,7 +323,13 @@ namespace Prácticas_Guía_3_parte_2
 
             double precio = 1000.0;
             double precioConDescuento = precio - (precio * descuento);
-            Console.WriteLine($"El precio con descuento es : ${precioConDescuento:F2}");
+            Console.WriteLine($"El precio con descuento es : ${precioConDescuento:F2}");*/
+
+
+            //Ejercicio 9 de la Guía 3.2: Calificación de números Positivos, Negativos o Ceros
+            
+
+
         } 
     }
 }
