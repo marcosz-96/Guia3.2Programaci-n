@@ -356,6 +356,54 @@ namespace Prácticas_Guía_3_parte_2
             }
 
 
+            //Ejercicio 10 de la Guía 3.2: Clasificación para juego acuatico 
+
+            //Peso máximo 120kg
+            //Altura mínima 1.5m
+            //Categorías de edades: Niño (-12), Adolecentes (12 y 17), Adultos (18 y 64), Adultos mayores (65+)
+
+
+            Console.WriteLine("Para saber si puede ingresar al juego");
+            Console.Write("Ingrese su edad: ");
+            int edad = int.Parse(Console.ReadLine());
+
+            Console.Write("Ingrese su altura: ");
+            double alt = double.Parse(Console.ReadLine());
+
+            Console.Write("Ingrese su peso: ");
+            int peso = int.Parse(Console.ReadLine());
+
+            switch (edad)
+            {
+                case int n when n <= 12:
+                    Console.WriteLine("Pertence a la categoria de: Niños");
+                    break;
+                case int n when n > 12 && n <= 17:
+                    Console.WriteLine("Pertence a la categoria de: Adolecentes");
+                    break;
+                case int n when n > 17 && n <= 64:
+                    Console.WriteLine("Pertence a la categoria de: Adultos");
+                    break;
+                case int n when n >= 65:
+                    Console.WriteLine("Pertence a la categoria de: Adultos Mayores");
+                    break;
+                default:
+                    Console.WriteLine("Opción inválida");
+                    break;
+            }
+            if (peso <= 120 && alt >= 1.5 && alt <= 2.0)
+            {
+                Console.WriteLine("Puedes pasar a los juegos!");
+            }
+            else if (peso > 120)
+            {
+                Console.WriteLine("Lo siento no puede pasar. Superas el peso max. permitido");
+            }
+            else
+            {
+                Console.WriteLine("Lo siento no puedes pasar. \nLos requisitos son:  \nAltura mím. de 1.5m y máx. 2.0m");
+            }
+
         }
     }
 }
